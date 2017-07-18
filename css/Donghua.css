@@ -1,0 +1,375 @@
+*{margin: 0;padding: 0;}
+.skyWheel{
+	/*width:540px;
+	height:540px;*/
+	width: 50%;
+	height: 900px;
+	background-color:lightblue;
+	margin: 0 auto 0 0;
+	position: relative;
+}
+.circleBig_outside{
+	width: 300px;
+	height: 300px;
+	background-color: rgba(255,255,255,0);
+	position: relative;
+	left: 120px;
+	top: 120px;
+	border-radius: 50%;
+	border: 10px white solid;
+	animation:circleBig_outside 50s;
+	animation-iteration-count: infinite;
+}
+.circleBig_outside_x{
+	display:block;
+	width: 300px;
+	height: 10px;
+	background-color: white;
+	margin-top: 150px;
+}
+.circleBig_outside_y{
+	display:block;
+	width: 300px;
+	height: 10px;
+	background-color: white;
+	margin-top: -15px;
+	transform:rotate(90deg);
+}
+.circleSmall_x{
+	display: block;
+	width: 100px;
+	height: 10px;
+	background-color: white;
+	margin-top: 50px;
+}
+.circleSmall_y{
+	display: block;
+	width: 50px;
+	height: 10px;
+	margin-top: -40px;
+	margin-left:25px;
+	background-color: white;
+	transform:rotate(90deg);
+}
+.circleSmall_top_outside{
+	transform-origin: 280px -40px;
+	animation: rotation 50s linear infinite;
+}
+.circleSmall_top_outside>div{
+	width: 100px;
+	height: 100px;
+	position: relative;
+	background: -webkit-linear-gradient(top,#fff,yellow,rgba(255,255,255,0)60%);
+	border-radius: 50%;
+	border: 10px white solid;
+	top: -310px;
+	left: 220px;
+	animation: rotation_two 50s linear infinite;
+}
+@keyframes rotation_two{
+	from{
+		transform: rotate(360deg);
+	}
+}
+@keyframes rotation{
+	to{
+		transform: rotate(360deg);
+	}
+}
+.circleSmall_left_outside{
+	transform-origin: 280px -160px;
+	animation: rotation 50s linear infinite;
+}
+.circleSmall_left{
+	width: 100px;
+	height: 100px;
+	position: relative;
+	background: -webkit-linear-gradient(top,#fff,yellow,rgba(255,255,255,0)60%);
+	border-radius: 50%;
+	border: 10px white solid;
+	top: -220px;
+	left: 5px;
+	animation: rotation_two 50s linear infinite;
+}
+.circleSmall_bottom_outside{
+	transform-origin: 280px -395px;
+	animation: rotation 50s linear infinite;
+}
+.circleSmall_bottom{
+	width: 100px;
+	height: 100px;
+	position: relative;
+	background: -webkit-linear-gradient(top,#fff,yellow,rgba(255,255,255,0)60%);
+	border-radius: 50%;
+	border: 10px white solid;
+	top: -240px;
+	left: 220px;
+	animation: rotation_two 50s linear infinite;
+}
+.circleSmall_right_outside{
+	transform-origin: 280px -285px;
+	animation: rotation 50s linear infinite;
+}
+.circleSmall_right{
+	width: 100px;
+	height: 100px;
+	position: relative;
+	background: -webkit-linear-gradient(top,#fff,yellow,rgba(255,255,255,0)60%);
+	border-radius: 50%;
+	border: 10px white solid;
+	top: -340px;
+	left: 435px;
+	animation: rotation_two 50s linear infinite;
+}
+.circleSmall_left_top_outside{
+	transform-origin: 280px -520px;
+	animation: rotation 50s linear infinite;
+}
+.circleSmall_left_top{
+	width: 100px;
+	height: 100px;
+	position: relative;
+	background: -webkit-linear-gradient(top,#fff,yellow,rgba(255,255,255,0)60%);
+	border-radius: 50%;
+	border: 10px white solid;
+	top: -720px;
+	left: 60px;
+	animation: rotation_two 50s linear infinite;
+}
+.circleSmall_right_top_outside{
+	transform-origin: 280px -640px;
+	animation: rotation 50s linear infinite;
+}
+.circleSmall_right_top{
+	width: 100px;
+	height: 100px;
+	position: relative;
+	background: -webkit-linear-gradient(top,#fff,yellow,rgba(255,255,255,0)60%);
+	border-radius: 50%;
+	border: 10px white solid;
+	top: -840px;
+	left:380px;
+	animation: rotation_two 50s linear infinite;
+}
+.circleSmall_left_bottom_outside{
+	transform-origin: 280px -755px;
+	animation: rotation 50s linear infinite;
+}
+.circleSmall_letf_bottom{
+	width: 100px;
+	height: 100px;
+	position: relative;
+	background: -webkit-linear-gradient(top,#fff,yellow,rgba(255,255,255,0)60%);
+	border-radius: 50%;
+	border: 10px white solid;
+	top: -670px;
+	left: 60px;
+	animation: rotation_two 50s linear infinite;
+}
+.circleSmall_right_bottom_outside{
+	transform-origin: 280px -877px;
+	animation: rotation 50s linear infinite;
+}
+.circleSmall_right_bottom{
+	width: 100px;
+	height: 100px;
+	position: relative;
+	background: -webkit-linear-gradient(top,#fff,yellow,rgba(255,255,255,0)60%);
+	border-radius: 50%;
+	border: 10px white solid;
+	top: -790px;
+	left: 380px;
+	animation: rotation_two 50s linear infinite;
+}
+.square_outside{
+	position:relative;
+	width: 0px;
+	background-color: lightblue;
+	border: 100px solid white;
+	border-top:none;
+	border-left-color: rgba(255,255,255,0);
+	border-right-color: rgba(255,255,255,0);
+	top:60px;
+	left: 180px;
+}
+.length{
+	display: block;
+	width: 200px;
+	height: 10px;
+	margin-top: -370px;
+	margin-left:180px;
+	background-color: white;
+	transform:rotate(90deg);
+}
+.car{
+	width: 50%;
+	height: 900px;
+	background-color:lightblue;
+	position: absolute;
+	top:0px;
+	right:0px;
+
+}
+.carContext{
+	width:100%;
+	background-color: lightblue;
+	margin: 70% auto;
+	animation: carContext 10s;
+	animation-iteration-count:infinite;
+}
+.carTop{
+	width: 100px;
+	height: 100px;
+	border: 10px solid white;
+	border-radius:50%;
+	border-bottom: none;
+}
+
+.carTop_x{
+	display: block;
+	width: 120px;
+	height: 50px;
+	background: lightblue;
+	border-top: 10px solid white;
+	margin-top:50px;
+	margin-left: -10px;
+}
+.carTop_y{
+	display: block;
+	width: 50px;
+	height: 10px;
+	background:white;
+	transform: rotate(90deg);
+	margin-top:-90px;
+	margin-left: 25px;
+}
+.carMid{
+	width:150px;
+	height: 40px;
+	background-color: pink;
+	border: 10px solid white;
+	border-top-left-radius: 40%;
+	border-top-right-radius: 40%;
+	margin-top:-50px;
+	margin-left:-25px;
+}
+.carBottom_circleOne{
+	width: 30px;
+	height: 30px;
+	border: 5px solid white;
+	border-radius: 50%;
+	background-color: pink;
+	animation: carBottom_circleOne 1s;
+	animation-iteration-count: infinite;
+}
+.carBottom_circleTwo{
+	width: 30px;
+	height: 30px;
+	border: 5px solid white;
+	border-radius: 50%;
+	background-color: pink;
+	margin-top: -40px;
+	margin-left: 80px;
+	animation: carBottom_circleTwo 1s;
+	animation-iteration-count: infinite;
+}
+.carBottom_circle_x{
+	display: block;
+	width: 30px;
+	height: 5px;
+	background-color: white;
+	margin-top:13px;
+}
+.carBottom_circle_y{
+	display: block;
+	width: 31px;
+	height: 5px;
+	background-color: white;
+	transform:rotate(90deg);
+	margin-top: -6px;
+}
+.yunLeft{
+	top:100px;
+	position: absolute;
+	animation: yunLeft 10s;
+	animation-iteration-count:infinite;
+}
+.yun_top{
+	display:block;
+	width: 100px;
+	height: 60px;
+	border-radius: 50%;
+	position: absolute;
+	border: 10px solid white;
+	background-color: white;
+	top: -50px;
+	left: 40px;
+}
+.yun_right{
+	display:block;
+	width: 100px;
+	height: 60px;
+	border-radius: 50%;
+	position: absolute;
+	border: 10px solid white;
+	background-color: white;
+	top: -10px;
+	left: 90px;
+}
+.yun_left{
+	display:block;
+	width: 100px;
+	height: 60px;
+	border-radius: 50%;
+	position: absolute;
+	border: 10px solid white;
+	background-color: white;
+	top: -10px;
+	left: -10px;
+}
+.yun_bottom{
+	display:block;
+	width: 210px;
+	height: 30px;
+	position: absolute;
+	border-top: 10px solid white;
+	background-color: lightblue;
+	top: 40px;
+	left: -5px;
+}
+.yunRight{
+	top:80px;
+	left: 400px;
+	position: absolute;
+	animation: yunRight 10s;
+	animation-iteration-count:infinite;
+}
+@keyframes carContext{
+	0%{margin-left:50%;}
+	50%{margin-left:0%;}
+	100%{margin-left:50%;}
+}
+@keyframes carBottom_circleOne{
+	0%{transform:rotate(0);}
+	50%{transform:rotate(1800deg);}
+	100%{transform:rotate(0);}
+}
+@keyframes carBottom_circleTwo{
+	0%{transform:rotate(0);}
+	50%{transform:rotate(1800deg);}
+	100%{transform:rotate(0);}
+}
+@keyframes circleBig_outside{
+	to
+	{transform:rotate(360deg);}
+}
+@keyframes yunLeft{
+	0%{left:0px;top: 100px;}
+	50%{left:50px;top: 70px;}
+	100%{left:0px;top: 100px;}
+}
+@keyframes yunRight{
+	0%{left:300px;top: 70px;}
+	50%{left:350px;top: 100px;}
+	100%{left:300px;top: 70px;}
+}
